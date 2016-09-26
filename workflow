@@ -1,0 +1,33 @@
+
+Pasos para implementar una nueva funcionalidad en el proyecto Wekain
+
+BACK-END-WORKFLOW
+1) Crear las funciones de prueba que sean necesarias creando un archivo de pruebas
+    php artisan make:test CategoriasTest
+2) Ejecutar el archivo de pruebas para verificar que ninguna prueba se satisface inicialmente
+    phpunit tests/CategoriasTest.php
+3) Crear el modelo necesario con la migracion correspondiente(-m) si es una nueva tabla
+    php artisan make:model Categoria -m
+4) Si el modelo ya existe, solo crear la migracion correspondiente y actualizar el modelo
+    php artisan make:migration AddCampoTabla --table="NombreTabla"
+5) Ejecutar las migraciones para que se transfieran a la base de datos
+    php artisan migrate
+5) Crear o actualizar el Factory correspondiente para las pruebas editando el archivo
+    database\factories\ModelFactory.php
+6) Crear el Seeder correspiendete para cargar la base de datos con datos de prueba.
+    php artisan make:seeder CategoriasTableSeeder
+7) Ejecutar el seeder creado con
+    php artisan db:seed --class="CategoriasTableSeeder"
+8) Crear el controlador para implementar las funcionalidades o con la opcion (--resource) para un CRUD
+    php artisan make:controller Categorias
+9) Si se requieren validaciones, se debe crear un Request para uncluirlo en el controlador ya creado
+    php artisan make:request CategoriaRequest
+10) Agregar las rutas hacia las nuevas funcionalidad editanto el archivo
+    app\Http\routes.php
+11) Listar las rutas, para comprobarlas
+    php artisan api:routes
+12) Volver a ejecutar las pruebas para verificar que todas las pruebas se satisfacen
+    phpunit tests/CategoriasTest.php
+
+
+FRONT-END-WORKFLOW

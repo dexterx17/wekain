@@ -28,8 +28,15 @@ $api->group(['middleware' => ['api']], function ($api) {
     $api->post('auth/password/email', 'Auth\PasswordResetController@sendResetLinkEmail');
     $api->get('auth/password/verify', 'Auth\PasswordResetController@verify');
     $api->post('auth/password/reset', 'Auth\PasswordResetController@reset');
+
+    $api->get('categorias','Categorias@index');
+    $api->get('categorias/{id}','Categorias@show');
+    $api->post('categorias','Categorias@store');
+    $api->post('categorias/{id}','Categorias@update');
+    $api->delete('categorias/{id}/delete','Categorias@destroy');
 });
 
 //protected API routes with JWT (must be logged in)
 $api->group(['middleware' => ['api', 'api.auth']], function ($api) {
+
 });

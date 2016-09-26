@@ -10,6 +10,8 @@
 | database. Just tell the factory how a default model should look.
 |
 */
+use App\Categoria;
+use App\User;
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
@@ -25,4 +27,27 @@ $factory->define(App\PasswordReset::class, function (Faker\Generator $faker) {
         'email'  => $faker->safeEmail,
         'token' => str_random(10),
     ];
+});
+
+$factory->define(Categoria::class,function(Faker\Generator $faker){
+    $user_ids = \DB::table('users')->select('id')->get();
+    $array = [
+        'categoria'=>$faker->name,
+        'descripcion'=>$faker->name,
+        'slug'=>$faker->slug,
+        'icono'=>$faker->imageUrl,
+        'user_id'=>$faker->randomElement($user_ids)->id,
+    ];
+    return $array;
+});
+
+$factory->define(Item::class,function(Faker\Generator $faker){
+    $user_ids = \DB::table('users')->select('id')->get();
+    $array = [
+        'item'=>$faker->name,
+        'descripcion'=>$faker->name,
+        'user_id'=>$faker->randomElement($user_ids)->id,
+        //'type'=>
+    ];
+    return $array;
 });
