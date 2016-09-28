@@ -2,10 +2,11 @@
 
 use App\PasswordReset;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class PasswordResetTest extends TestCase
 {
-    use DatabaseTransactions;
+    use DatabaseMigrations;
 
     public function testSendEmailWithTokenForResetPassword()
     {

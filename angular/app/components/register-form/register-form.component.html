@@ -1,24 +1,29 @@
 <form ng-submit="vm.register()">
 	<div>
 		<md-input-container class="RegisterForm-inputContainer">
-			<label>Name</label>
+			<label>{{ 'nombre' | translate }}</label>
 			<input type="text" ng-model="vm.name">
 		</md-input-container>
 	</div>
 
 	<div>
 		<md-input-container class="RegisterForm-inputContainer">
-			<label>Email</label>
+			<label>{{ 'email' | translate }}</label>
 			<input type="email" ng-model="vm.email">
 		</md-input-container>
 	</div>
 
 	<div>
 		<md-input-container class="RegisterForm-inputContainer">
-			<label>Password</label>
+			<label>{{ 'password' | translate }}</label>
 			<input type="password" ng-model="vm.password">
 		</md-input-container>
 	</div>
 
-	<md-button type="submit" class="RegisterForm-submit md-primary md-raised">Register</md-button>
+    <p class="bienvenida_msg2">{{'te_envitamos_a' | translate}}</p>
+
+	<md-button type="submit" class="RegisterForm-submit md-primary md-raised">{{ 'registrarme' | translate }}</md-button>
+    <p id="politicas_y_privacidad"> {{ 'aceptar_politicas' | translate }} <a href="#/politicas" "{{'politicas_y_privacidad'| translate }}">{{'politicas_y_privacidad'| translate }}</a> {{'y'| translate }} <a href="#/terminos" "{{'terminos_de_uso'| translate }}">{{'terminos_de_uso'| translate }}</a> {{'aceptar_politicas2'| translate }}</p>
+    <br />
+    <p class="submsg">{{ 'eres_parte_de_la_aventura' | translate}} <a href="#/login" class="submsg-enlace" title="{{'iniciar_sesion'| translate }}"> {{'iniciar_sesion'| translate }}</a></p>
 </form>

@@ -18,6 +18,9 @@
     "restangular": "~1.5.2",
     "angular-loading-bar": "~0.9.0",
     "satellizer": "^0.14.0",
-    "angular-translate": "^2.12.1"
+    "angular-translate": "^2.12.1",
+    "angular-translate-storage-cookie": "^2.12.1",
+    "angular-translate-storage-local": "^2.12.1",
+    "angular-translate-loader-static-files": "^2.12.1"
   }
 }

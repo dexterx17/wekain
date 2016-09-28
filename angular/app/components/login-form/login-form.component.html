@@ -1,17 +1,19 @@
 <form ng-submit="vm.login()">
 	<div>
 		<md-input-container class="LoginForm-inputContainer">
-			<label>Email</label>
+			<label>{{ 'email' | translate }}</label>
 			<input type="email" ng-model="vm.email">
 		</md-input-container>
 	</div>
 
 	<div>
 		<md-input-container class="LoginForm-inputContainer">
-			<label>Password</label>
+			<label>{{ 'password' | translate }}</label>
 			<input type="password" ng-model="vm.password">
 		</md-input-container>
 	</div>
-
-	<md-button type="submit" class="LoginForm-submit md-primary md-raised">Log in</md-button>
+    <a href="#/forgot-password" id="olvido_password" "{{'olvido_password'|translate}}">{{'olvido_password'|translate}}</a>
+	<md-button type="submit" class="LoginForm-submit md-primary md-raised">{{'iniciar_sesion'| translate }}</md-button>
+    <hr>
+    <p class="submsg">{{'no_tienes_cuenta'|translate}} <a href="#/register" class="registro submsg-enlace" title="{{'registrate'|translate}}">{{'registrate'|translate}}</a></p>
 </form>
