@@ -1,0 +1,34 @@
+LAYER
+	NAME "provincias"
+	DUMP TRUE
+	DEBUG 5
+    PROJECTION
+	     "init=epsg:4326"
+	END
+	EXTENT -180.000015 -90.000000 180.000000 83.627419
+	METADATA
+	  "wms_title" "provincias"
+      "wms_srs" "EPSG:4326"
+      "wms_name" "provincias"
+      "wms_server_version" "1.1.1"
+    "wms_getfeature_formatlist" "text/html,application/json"
+    END
+    HEADER 'templates/header.html'
+    FOOTER 'templates/footer.html'
+	TEMPLATE "templates/gadm2_query.html"
+    CONNECTIONTYPE postgis
+  	CONNECTION "dbname='ecuador' host='127.0.0.1' port=5432 user='dexter' password='0112358' sslmode=disable"
+	#DATA 'G.geom from locations L, items_explorados IE, Items I, gadm G using unique objectid WHERE I.id=L.item AND G.id_0=L.pais_id AND IE.usuario=19 ' 
+	DATA 'geom from gadm using unique objectid JOIN locations L ON id_0=L.pais_id JOIN items I ON I.id=L.item JOIN items_explorados IE ON IE.item=I.id WHERE IE.usuario=19' 
+	#DATA 'geom from gadm using unique objectid'
+	FILTER 'id_0=68'
+	STATUS ON
+    TYPE POLYGON
+    CLASS
+      NAME "VISITADO"
+      STYLE
+      	COLOR	0 255 0
+        OUTLINECOLOR 0 0 0
+      END # STYLE
+    END # CLASS
+END # LAYER

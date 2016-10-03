@@ -1,3 +1,5 @@
+import {GameHeaderComponent} from './app/components/game-header/game-header.component';
+import {UserOrigenComponent} from './app/components/user-origen/user-origen.component';
 import {AppTranslatorComponent} from './app/components/app-translator/app-translator.component';
 import {AppHeaderComponent} from './app/components/app-header/app-header.component';
 import {AppViewComponent} from './app/components/app-view/app-view.component';
@@ -8,6 +10,8 @@ import {LoginFormComponent} from './app/components/login-form/login-form.compone
 import {RegisterFormComponent} from './app/components/register-form/register-form.component';
 
 angular.module('app.components')
+	.component('gameHeader', GameHeaderComponent)
+	.component('userOrigen', UserOrigenComponent)
 	.component('appTranslator', AppTranslatorComponent)
 	.component('appHeader', AppHeaderComponent)
 	.component('appView', AppViewComponent)

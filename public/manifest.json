@@ -8,7 +8,7 @@
   "start_url": "/?homescreen=1",
   "icons": [
     {
-      "src": "img/icon.png",
+      "src": "img/wekain.png",
       "sizes": "198x198",
       "type": "image/png"
     }

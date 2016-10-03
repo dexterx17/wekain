@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="24" height="12">
+<path style="fill:#ffffff; stroke:none;" d="M0 0L0 4L24 4L24 0L0 0z"/>
+<path style="fill:#adbdeb; stroke:none;" d="M4 2L5 3L4 2z"/>
+<path style="fill:#1f6fd7; stroke:none;" d="M5 2L6 3L5 2z"/>
+<path style="fill:#216fd7; stroke:none;" d="M6 2L7 3L6 2z"/>
+<path style="fill:#abbdeb; stroke:none;" d="M7 2L8 3L7 2z"/>
+<path style="fill:#9fb1e5; stroke:none;" d="M4 3L5 4L4 3z"/>
+<path style="fill:#3981ed; stroke:none;" d="M5 3L6 4L5 3z"/>
+<path style="fill:#3b83ed; stroke:none;" d="M6 3L7 4L6 3z"/>
+<path style="fill:#9dafe3; stroke:none;" d="M7 3L8 4L7 3z"/>
+<path style="fill:#015de7; stroke:none;" d="M0 4L0 8L24 8L24 4L0 4z"/>
+<path style="fill:#235bd5; stroke:none;" d="M4 4L5 5L4 4z"/>
+<path style="fill:#c7dbfb; stroke:none;" d="M5 4L6 5L5 4z"/>
+<path style="fill:#c9ddfb; stroke:none;" d="M6 4L7 5L6 4z"/>
+<path style="fill:#255dd5; stroke:none;" d="M7 4L8 5L7 4z"/>
+<path style="fill:#055be1; stroke:none;" d="M4 5L5 6L4 5z"/>
+<path style="fill:#5d8de5; stroke:none;" d="M5 5L6 6L5 5z"/>
+<path style="fill:#5f8fe5; stroke:none;" d="M6 5L7 6L6 5z"/>
+<path style="fill:#075be1; stroke:none;" d="M7 5L8 6L7 5z"/>
+<path style="fill:#ff0101; stroke:none;" d="M0 8L0 12L24 12L24 8L0 8z"/>
+</svg>

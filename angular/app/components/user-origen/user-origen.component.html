@@ -1,0 +1,108 @@
+<div layout="row" layout-xs="column">
+    <div flex="66">
+        <md-content class="md-padding">
+            <md-tabs md-dynamic-height class="md-accent" md-align-tabs="{{data.bottom ? 'bottom' : 'top'}}" md-selected="data.selectedIndex">
+                <md-tab id="tab1">
+                    <md-tab-label>
+                        {{ 'pais' | translate }}
+                    </md-tab-label>
+                    <md-tab-body>
+                         <form ng-submit="$event.preventDefault()">
+                          <p>Definamos un punto de partida para la aventura!</p>
+                          <md-autocomplete
+                              ng-disabled="vm.isDisabled"
+                              md-no-cache="vm.noCache"
+                              md-selected-item="vm.selectedItem"
+                              md-search-text-change="vm.searchTextChange(vm.searchText)"
+                              md-search-text="vm.searchText"
+                              md-selected-item-change="vm.selectedItemChange(item)"
+                              md-items="item in vm.querySearch(vm.searchText)"
+                              md-item-text="item.display"
+                              md-min-length="0"
+                              placeholder="{{ 'selecciona_pais' | translate }}">
+                            <md-item-template>
+                                <span class="item-title">
+                                    <!--<md-icon md-svg-src="img/flags/{{ item.short_name }}.png.svg"></md-icon>-->
+                                    <md-icon>
+                                        <img class="bandera" ng-src="{{ item.bandera_url }}">
+                                    </md-icon>
+                                    <span md-highlight-text="vm.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                                    <md-icon>
+                                        <img class="escudo" ng-src="{{ item.escudo_url }}">
+                                    </md-icon>
+                                </span
+                            </md-item-template>
+                            <md-not-found>
+                              No hay paises que coincidan con  "{{vm.searchText}}".
+                            </md-not-found>
+                          </md-autocomplete>
+                        </form>
+                        <div layout="row">
+                            <leaflet id="mymap" lf-center="center" layers="layers" height="480px" width="100%"></leaflet>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+                <md-tab id="tab2">
+                    <md-tab-label>
+                        {{ 'provincia' | translate }}
+                    </md-tab-label>
+                    <md-tab-body>
+
+                    </md-tab-body>
+                </md-tab>
+                <md-tab id="tab3">
+                    <md-tab-label>
+                        Item Three
+                    </md-tab-label>
+                    <md-tab-body>
+                        View for Item #3
+                        <br/>
+                        data.selectedIndex = 2;
+                    </md-tab-body>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+    <div flex="44">
+      <p class="md-body-2">LAT: {{ vm.click_lat }}</p>
+      <p class="md-body-2">LNG: {{ vm.click_lng }}</p>
+      <hr>
+      <p class="md-body-2">LAT: {{ vm.mouse_lat }}</p>
+      <p class="md-body-2">LNG: {{ vm.mouse_lng }}</p>
+
+      <md-grid-list
+        md-cols-xs="1" md-cols-sm="1" md-cols-md="1" md-cols-gt-md="1"
+        md-row-height-gt-md="4:1" md-row-height="4:1"
+        md-gutter="12px" md-gutter-gt-sm="8px">
+
+           <md-grid-tile class="gray"
+            md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+              <md-content>
+                500
+              </md-content>
+              <md-grid-tile-footer>
+                <h3>Lugares de Interes</h3>
+              </md-grid-tile-footer>
+            </md-grid-tile>
+             <md-grid-tile class="gray"
+            md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+              <md-grid-tile-footer>
+                <h3>Actividades</h3>
+              </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="gray"
+            md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+              <md-grid-tile-footer>
+                <h3>Categorias</h3>
+              </md-grid-tile-footer>
+            </md-grid-tile>
+            <md-grid-tile class="gray"
+            md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+              <md-grid-tile-footer>
+                <h3>Retos</h3>
+              </md-grid-tile-footer>
+            </md-grid-tile>
+
+      </md-grid-list>
+    </div>
+</div>

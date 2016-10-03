@@ -20,7 +20,8 @@ BACK-END-WORKFLOW
     php artisan db:seed --class="CategoriasTableSeeder"
 8) Crear el controlador para implementar las funcionalidades o con la opcion (--resource) para un CRUD
     php artisan make:controller Categorias
-9) Si se requieren validaciones, se debe crear un Request para uncluirlo en el controlador ya creado
+9) Si se requieren validaciones, se debe crear un Request que hereda de Dingo\Api\Http\FormRequest
+   para uncluirlo en el controlador ya creado
     php artisan make:request CategoriaRequest
 10) Agregar las rutas hacia las nuevas funcionalidad editanto el archivo
     app\Http\routes.php

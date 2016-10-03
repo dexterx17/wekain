@@ -19,17 +19,7 @@ class Categorias extends Controller
     {
         $categorias = Categoria::all();
 
-        return response()->success($categorias);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return response()->success($categorias, new CategoriasTransformer);
     }
 
     /**
@@ -61,17 +51,6 @@ class Categorias extends Controller
             return response()->success($categoria, new CategoriasTransformer);
         }
         return response()->error('categoria_no_encontrada',401);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
     }
 
     /**

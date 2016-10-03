@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="17" height="12">
+<path style="fill:#fbe90f; stroke:none;" d="M0 0L0 1L17 1L0 0z"/>
+<path style="fill:#fdf50f; stroke:none;" d="M0 1L0 2L17 2L0 1z"/>
+<path style="fill:#f19b0f; stroke:none;" d="M0 2L0 3L17 3L0 2z"/>
+<path style="fill:#e1250d; stroke:none;" d="M0 3L0 4L17 4L0 3z"/>
+<path style="fill:#f9d70f; stroke:none;" d="M0 4L0 5L17 5L0 4z"/>
+<path style="fill:#dd050d; stroke:none;" d="M0 5L0 6L17 6L0 5z"/>
+<path style="fill:#fbe90f; stroke:none;" d="M0 6L0 7L17 7L0 6z"/>
+<path style="fill:#dd050d; stroke:none;" d="M0 7L0 8L17 8L0 7z"/>
+<path style="fill:#f9d70f; stroke:none;" d="M0 8L0 9L17 9L0 8z"/>
+<path style="fill:#e1250d; stroke:none;" d="M0 9L0 10L17 10L0 9z"/>
+<path style="fill:#f19b0f; stroke:none;" d="M0 10L0 11L17 11L0 10z"/>
+<path style="fill:#fdf50f; stroke:none;" d="M0 11L0 12L17 12L0 11z"/>
+</svg>

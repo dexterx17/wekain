@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="18" height="12">
+<path style="fill:#ffffff; stroke:none;" d="M0 0L0 12L18 12L18 0L0 0z"/>
+<path style="fill:#f1c7cf; stroke:none;" d="M7 2L8 3L7 2z"/>
+<path style="fill:#df8193; stroke:none;" d="M8.66667 2.33333L9.33333 2.66667L8.66667 2.33333z"/>
+<path style="fill:#f1c7cf; stroke:none;" d="M10 2L11 3L10 2z"/>
+<path style="fill:#df8193; stroke:none;" d="M6 3L7 4L6 3z"/>
+<path style="fill:#bf0127; stroke:none;" d="M7.60339 4.08179C5.13173 5.87167 7.91807 9.71307 10.3966 7.91821C12.8683 6.12833 10.0819 2.28693 7.60339 4.08179z"/>
+<path style="fill:#df8193; stroke:none;" d="M11 3L12 4L11 3z"/>
+<path style="fill:#f1c9d1; stroke:none;" d="M5 4L6 5L5 4M12 4L13 5L12 4z"/>
+<path style="fill:#df8193; stroke:none;" d="M5.33333 5.66667L5.66667 6.33333L5.33333 5.66667M12.3333 5.66667L12.6667 6.33333L12.3333 5.66667z"/>
+<path style="fill:#f1c9d1; stroke:none;" d="M5 7L6 8L5 7M12 7L13 8L12 7z"/>
+<path style="fill:#df8193; stroke:none;" d="M6 8L7 9L6 8M11 8L12 9L11 8z"/>
+<path style="fill:#f1c7cf; stroke:none;" d="M7 9L8 10L7 9z"/>
+<path style="fill:#df8193; stroke:none;" d="M8.66667 9.33333L9.33333 9.66667L8.66667 9.33333z"/>
+<path style="fill:#f1c7cf; stroke:none;" d="M10 9L11 10L10 9z"/>
+</svg>

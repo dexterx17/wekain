@@ -163,7 +163,7 @@ return [
         LaravelAngular\Generators\LaravelServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
-
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -210,6 +210,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'JWTAuth'   => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
     ],
 

@@ -21,6 +21,19 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 				main: {}
 			}
 		})
+        .state('game',{
+            abstract: true,
+            data: { },
+            views: {
+                header: {
+                    templateUrl: getView('header-game')
+                },
+                footer:{
+                    templateUrl: getView('footer')
+                },
+                main:{}
+            }
+        })
 		.state('app.landing', {
             url: '/',
             views: {
@@ -58,6 +71,14 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
             views: {
                 'main@': {
                     templateUrl: getView('reset-password')
+                }
+            }
+        })
+        .state('game.origen', {
+            url: '/origen',
+            views: {
+                'main@': {
+                    templateUrl: getView('origen')
                 }
             }
         });

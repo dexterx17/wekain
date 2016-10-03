@@ -21,6 +21,8 @@
     "angular-translate": "^2.12.1",
     "angular-translate-storage-cookie": "^2.12.1",
     "angular-translate-storage-local": "^2.12.1",
-    "angular-translate-loader-static-files": "^2.12.1"
+    "angular-translate-loader-static-files": "^2.12.1",
+    "leaflet": "^1.0.1",
+    "angular-leaflet-directive": "^0.10.0"
   }
 }

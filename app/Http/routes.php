@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('test','Paises@index');
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'AngularController@serveApp');
 
@@ -29,11 +30,24 @@ $api->group(['middleware' => ['api']], function ($api) {
     $api->get('auth/password/verify', 'Auth\PasswordResetController@verify');
     $api->post('auth/password/reset', 'Auth\PasswordResetController@reset');
 
-    $api->get('categorias','Categorias@index');
+    /*$api->get('categorias','Categorias@index');
     $api->get('categorias/{id}','Categorias@show');
     $api->post('categorias','Categorias@store');
+    */
+    $api->resource('categorias','Categorias',[
+        'only'=>['index','show','store']
+    ]);
     $api->post('categorias/{id}','Categorias@update');
     $api->delete('categorias/{id}/delete','Categorias@destroy');
+
+    $api->resource('items','Items',[
+        'except' => ['update','destroy']
+    ]);
+    $api->post('items/{id}','Items@update');
+    $api->delete('items/{id}/delete','Items@destroy');
+
+    $api->get('paises','Paises@index');
+
 });
 
 //protected API routes with JWT (must be logged in)

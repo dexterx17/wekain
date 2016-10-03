@@ -5,6 +5,7 @@ class AppViewController {
         this.$window = $window;
         this.$mdToast = $mdToast;
         this.ToastService = ToastService;
+        this.n_users=10;
     }
 
     $onInit() {

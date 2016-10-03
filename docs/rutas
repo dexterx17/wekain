@@ -1,0 +1,7 @@
+/
+/login
+/register
+/forgot-password
+/reset-password/:email/:token
+
+/origen

@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<svg width="17" height="12">
+<path style="fill:#ffffff; stroke:none;" d="M0 0L0 1L17 1L0 0z"/>
+<path style="fill:#2359c9; stroke:none;" d="M0 1L0 2L17 2L0 1z"/>
+<path style="fill:#0141c1; stroke:none;" d="M0 2L0 3L17 3L0 2z"/>
+<path style="fill:#ffffff; stroke:none;" d="M0 3L0 9L8 9L8 8L8 4L0 3z"/>
+<path style="fill:#bdcfef; stroke:none;" d="M8 3L9 4L8 3z"/>
+<path style="fill:#ffffff; stroke:none;" d="M9 3L9 4L9 8L9 9L17 9L17 3L9 3z"/>
+<path style="fill:#c5d5f1; stroke:none;" d="M6 4L7 5L6 4z"/>
+<path style="fill:#9bb5e7; stroke:none;" d="M7 4L8 5L7 4z"/>
+<path style="fill:#4573d1; stroke:none;" d="M8 4L9 5L8 4z"/>
+<path style="fill:#9bb5e7; stroke:none;" d="M9 4L10 5L9 4z"/>
+<path style="fill:#c5d5f1; stroke:none;" d="M10 4L11 5L10 4z"/>
+<path style="fill:#9db5e7; stroke:none;" d="M6.33333 5.66667L6.66667 6.33333L6.33333 5.66667z"/>
+<path style="fill:#5b83d7; stroke:none;" d="M7.33333 5.66667L7.66667 6.33333L7.33333 5.66667z"/>
+<path style="fill:#dde7f7; stroke:none;" d="M8.33333 5.66667L8.66667 6.33333L8.33333 5.66667z"/>
+<path style="fill:#5b83d7; stroke:none;" d="M9.33333 5.66667L9.66667 6.33333L9.33333 5.66667z"/>
+<path style="fill:#9db5e7; stroke:none;" d="M10.3333 5.66667L10.6667 6.33333L10.3333 5.66667z"/>
+<path style="fill:#c5d5f1; stroke:none;" d="M6 7L7 8L6 7z"/>
+<path style="fill:#9bb5e7; stroke:none;" d="M7 7L8 8L7 7z"/>
+<path style="fill:#4573d1; stroke:none;" d="M8 7L9 8L8 7z"/>
+<path style="fill:#9bb5e7; stroke:none;" d="M9 7L10 8L9 7z"/>
+<path style="fill:#c5d5f1; stroke:none;" d="M10 7L11 8L10 7z"/>
+<path style="fill:#bdcfef; stroke:none;" d="M8 8L9 9L8 8z"/>
+<path style="fill:#0141c1; stroke:none;" d="M0 9L0 10L17 10L0 9z"/>
+<path style="fill:#2359c9; stroke:none;" d="M0 10L0 11L17 11L0 10z"/>
+<path style="fill:#ffffff; stroke:none;" d="M0 11L0 12L17 12L0 11z"/>
+</svg>
