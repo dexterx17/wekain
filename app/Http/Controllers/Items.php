@@ -21,6 +21,7 @@ class Items extends Controller
         $items = Item::all();
         $items->each(function($items){
             $items->categorias;
+            $items->actividades;
         });
         return response()->success($items, new ItemsTransformer);
     }

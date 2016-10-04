@@ -40,6 +40,18 @@ $api->group(['middleware' => ['api']], function ($api) {
     $api->post('categorias/{id}','Categorias@update');
     $api->delete('categorias/{id}/delete','Categorias@destroy');
 
+    $api->resource('actividades','Actividades',[
+        'only'=>['index','show','store']
+    ]);
+    $api->post('actividades/{id}','Actividades@update');
+    $api->delete('actividades/{id}/delete','Actividades@destroy');
+
+    $api->resource('tips','Tips',[
+        'only'=>['index','show','store']
+    ]);
+    $api->post('tips/{id}','Tips@update');
+    $api->delete('tips/{id}/delete','Tips@destroy');
+
     $api->resource('items','Items',[
         'except' => ['update','destroy']
     ]);

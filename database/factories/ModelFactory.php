@@ -11,6 +11,8 @@
 |
 */
 use App\Categoria;
+use App\Actividad;
+use App\Tip;
 use App\Pais;
 use App\User;
 use App\Item;
@@ -35,6 +37,30 @@ $factory->define(Categoria::class,function(Faker\Generator $faker){
     $user_ids = \DB::table('users')->select('id')->get();
     $array = [
         'categoria'=>$faker->name,
+        'descripcion'=>$faker->name,
+        'slug'=>$faker->slug,
+        'icono'=>$faker->imageUrl,
+        'user_id'=>$faker->randomElement($user_ids)->id,
+    ];
+    return $array;
+});
+
+$factory->define(Actividad::class,function(Faker\Generator $faker){
+    $user_ids = \DB::table('users')->select('id')->get();
+    $array = [
+        'actividad'=>$faker->name,
+        'descripcion'=>$faker->name,
+        'slug'=>$faker->slug,
+        'icono'=>$faker->imageUrl,
+        'user_id'=>$faker->randomElement($user_ids)->id,
+    ];
+    return $array;
+});
+
+$factory->define(Tip::class,function(Faker\Generator $faker){
+    $user_ids = \DB::table('users')->select('id')->get();
+    $array = [
+        'tip'=>$faker->name,
         'descripcion'=>$faker->name,
         'slug'=>$faker->slug,
         'icono'=>$faker->imageUrl,
